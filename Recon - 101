@@ -1,0 +1,10 @@
+# @ahmednajeh Recon - Bug Bounty:
+------------------------------------------
+nano wildcards
+cat wildcards | assetfinder | tee domain
+uniq -u domain | tee domain2
+cat domain2 | httprobe | tee hosts
+meg -v -d 2000 /
+meg -v -d 2000 / | tee final
+cat final | grep "404"
+------------------------------------------
